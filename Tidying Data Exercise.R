@@ -3,6 +3,8 @@ library(rcfss)
 library(readr)
 race
 
+testing
+
 #Tidy data structure
 race %>% pivot_longer(cols = c(`50`:`350`), names_to = "time", values_to = "cases", names_transform = list(time = parse_number))
 
